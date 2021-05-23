@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset = "UTF-8">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="C:\Users\mayra\OneDrive\Escritorio\Programacion3\estilos\estilosEditar.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Editar Producto</h1>
+    <form action="php/regcap.php" method= "post" class = "form-registro">
+        <h2>Editar Producto</h2>
+        <div class ="contenedor-input">
+            <input type = "text" name = "id" placeholder = "Id Producto" class = "input-4" required>
+            <input type = "text" name = "nombre" placeholder = "Nombre del Producto" class = "input-48" required>
+            <input type = "text" name = "marca" placeholder = "Marca de Producto" class = "input-48" required>
+            <input type = "text" name = "precio" placeholder = "Precio del Producto" class = "input-48" required>
+            <select name = "congregacion" id = "cmbCongregacion" class = "input-100" required>
+                <option value = "escoga una congregacion">Talle</option>
+                <option value = "escoga una congregacion">S</option>
+                <option value = "escoga una congregacion">M</option>
+                <option value = "escoga una congregacion">L</option>
+            </select>
+            <input type = "text" name = "color" placeholder = "Color del Producto" class = "input-48" required>
+            <input type = "text" name = "cantidad" placeholder = "Cantidad" class = "input-48" required>
+            <input type = "submit" value = "Editar Producto" class = "btn-enviar">
+        </div>      
+    </form>
+    </div>
+</body>
+</html>

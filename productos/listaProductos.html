@@ -1,124 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Productos</title>
-    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Lista de Productos</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="C:\Users\mayra\OneDrive\Escritorio\Programacion3\estilos\estilosProductos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" charset="utf-8"></script>
+  <script src='main.js'></script>
 </head>
 <body>
-    <h1>Lista de Productos</h1>
 
-    <div class="form">
-    <table>
-        <thead>
-            <th>Nombre del Producto</th>
-            <th>Marca</th>
+  <input type="checkbox" id="check"> 
+
+  <header>
+
+    <label for="check">
+      <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+
+    <div class="left_area">
+      <h3>EMME <span>INDUMENTARIA</span></h3>
+    </div>
+  </header>
+  
+  <div class="mobile_nav">
+    <div class="nav_bar">
+      <img src="C:\Users\mayra\OneDrive\Escritorio\Programacion3\imagenes\M.png" class="mobile_profile_image" alt="">
+      <i class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items">
+      <a href="C:\Users\mayra\OneDrive\Escritorio\Programacion3\index.html"><i class="fas fa-home"></i><span>Menú</span></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i><span>Productos</span></a>
+      <a href="#"><i class="fas fa-concierge-bell"></i><span>Servicios</span></a>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+    <div class="profile_info">
+      <img src="C:\Users\mayra\OneDrive\Escritorio\Programacion3\imagenes\M.png" class="profile_image" alt="">
+    </div>
+    <a href="C:\Users\mayra\OneDrive\Escritorio\Programacion3\index.html"><i class="fas fa-home"></i><span>Menú</span></a>
+    <a href="#"><i class="fas fa-shopping-cart"></i><span>Productos</span></a>
+    <a href="#"><i class="fas fa-concierge-bell"></i><span>Servicios</span></a>
+  </div>
+
+  <div class="content">
+    <h1>Lista de Productos</h1>
+       <div class="container">
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+               <th>Id</th>
+               <th>Nombre del Producto</th>
+               <th>Marca</th>
             <th>Precio</th>
             <th>Talle</th>
             <th>Color</th>
             <th>Cantidad Disponible</th>
-            <th>Ver Producto</th>
-            
-            <th>Editar</th>
-            
-            <th>Eliminar</th>
-            
-       </thead>
+            <th>Acciones</th>
+          </tr>
+        </thead>
         <tbody>
-            <tr>
-                <td>Zapatilla</td>
-                <td>Nike</td>
-                <td>$17.499</td>
-                <td>37.0</td>
-                <td>Negro y Blanco</td>
-                <td>5</td>
-                <td><div>
-                    <a href="./verProductos/prod01.html">Ver Producto</a>
-                </div></td>
-                <td><div>
-                <a href="./editarProductos.html">Editar</a>
-                </div></td>
-                <td><div>
-                    <a href="../eliminar.html">Eliminar</a>
-                    </div></td>
-            </tr>
-            <tr>
-                <td>Pantalón</td>
-                <td>Puma</td>
-                <td>$6.399</td>
-                <td>S</td>
-                <td>Negro</td>
-                <td>15</td>
-                <td><div>
-                    <a href="./verProductos/prod02.html">Ver Producto</a>
-                </div></td>
-                <td><div>
-                    <a href="./editarProductos.html">Editar</a>
-                    </div></td>
-                <td><div>
-                    <a href="../eliminar.html">Eliminar</a>
-                     </div></td>
-            </tr>
-            <tr>
-                <td>Remera</td>
-                <td>Nike</td>
-                <td>$2.299</td>
-                <td>L</td>
-                <td>Rosa</td>
-                <td>2</td>
-                <td><div>
-                    <a href="./verProductos/prod03.html">Ver Producto</a>
-                </div></td>
-                <td><div>
-                    <a href="./editarProductos.html">Editar</a>
-                    </div></td>
-                 <td><div>
-                    <a href="../eliminar.html">Eliminar</a>
-                </div></td>
-            </tr>
-            <tr>
-                <td>Buzo</td>
-                <td>Fila</td>
-                <td>$4.899</td>
-                <td>S</td>
-                <td>Rojo-Azul</td>
-                <td>8</td>
-                <td><div>
-                    <a href="./verProductos/prod04.html">Ver Producto</a>
-                </div></td>
-                <td><div>
-                    <a href="./editarProductos.html">Editar</a>
-                </div></td>
-                <td><div>
-                    <a href="../eliminar.html">Eliminar</a>
-                </div></td>
-            </tr>
-            <tr>
-                <td>Campera</td>
-                <td>Reebok</td>
-                <td>$6.999</td>
-                <td>M</td>
-                <td>Negro</td>
-                <td>1</td>
-                <td><div>
-                    <a href="./verProductos/prod05.html">Ver Producto</a>
-                </div></td>
-                <td><div>
-                    <a href="./editarProductos.html">Editar</a>
-                    </div></td>
-                <td><div>
-                     <a href="../eliminar.html">Eliminar</a>
-                </div></td>
-            </tr>
-        </tbody>
-    </table> </div>
+          <tr>
+              <td>01</td>
+              <td>Zapatilla</td>
+              <td>Nike</td>
+              <td>$17.499</td>
+              <td>37.0</td>
+              <td>Negro y Blanco</td>
+              <td>5</td>
+              <td>
+              <div>
+                  <a href="./verProductos/prod1.html" class="link-light">Ver Producto</a>
+                   <a href="./editarProd.html" class="link-light">Editar</a>
+                   <a href="../eliminar.html" class="link-danger">Eliminar</a>
+              </div>
+              </td>
+          </tr>
+          <tr>
+              <td>02</td>
+              <td>Pantalón</td>
+              <td>Puma</td>
+              <td>$6.399</td>
+              <td>S</td>
+              <td>Negro</td>
+              <td>15</td>
+              <td>
+                  <div><a href="./verProductos/prod02.html" class="link-light">Ver Producto</a>
+                       <a href="./editarProductos.html" class="link-light">Editar</a>
+                       <a href="../eliminar.html" class="link-danger">Eliminar</a></div>
+              </td>
+          </tr>
+          <tr>
+              <td>03</td>
+              <td>Remera</td>
+              <td>Nike</td>
+              <td>$2.299</td>
+              <td>L</td>
+              <td>Rosa</td>
+              <td>2</td>
+              <td>
+                  <div><a href="./verProductos/prod03.html" class="link-light">Ver Producto</a>
+                       <a href="./editarProductos.html" class="link-light">Editar</a>
+                       <a href="../eliminar.html" class="link-danger">Eliminar</a></div>
+              </td>
+          </tr>
+          <tr>
+              <td>04</td>
+              <td>Buzo</td>
+              <td>Fila</td>
+              <td>$4.899</td>
+              <td>S</td>
+              <td>Rojo-Azul</td>
+              <td>8</td>
+              <td>
+                  <div>
+                     <a href="./verProductos/prod04.html" class="link-light">Ver Producto</a>
+                     <a href="./editarProductos.html" class="link-light">Editar</a>
+                     <a href="../eliminar.html" class="link-danger">Eliminar</a>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Campera</td>
+            <td>Reebok</td>
+            <td>$6.999</td>
+            <td>M</td>
+            <td>Negro</td>
+            <td>1</td>
+            <td>
+              <div><a href="./verProductos/prod05.html" class="link-light">Ver Producto</a>
+              <a href="./editarProductos.html" class="link-light">Editar</a>
+              <a href="../eliminar.html" class="link-danger">Eliminar</a></div>
+            </td>
+          </tr>
+  </div>
+</div>
+</div>
 
-    <div>
-        <h5>
-            <a href="../menuPrincipal.html">Volver al Menú</a>
-        </h5>
-    
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      })
+    })
+  </script>
+
 </body>
 </html>
+<!--para redondear la imagen se pone border-radius: 50%; en el css-->
